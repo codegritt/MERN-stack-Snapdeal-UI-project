@@ -1,0 +1,179 @@
+.pincodeActnWidget {
+  z-index: 4;
+  pointer-events: auto;
+  transform: translate3d(0px, 0px, 0px);
+  transition: transform 0.5s ease-out 0s;
+  margin: 0px;
+  background-color: #fff;
+  border: solid 0.9px #e5e5e5;
+  border-radius: 3px;
+
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: auto;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.deliveryPin {
+  font-size: 12px;
+  font-weight: normal;
+  color: #999999;
+  padding-bottom: 4px;
+}
+
+.dashPincode {
+  height: 2px;
+  background-color: #eaeaea;
+  width: 19px;
+  margin: 11px auto;
+}
+
+.letDelivr {
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 1.59;
+  text-align: center;
+  color: #5a5a59;
+  padding-left: 18px;
+  padding-right: 13px;
+}
+
+.checkavail {
+  padding: 0;
+  margin-top: 10px;
+}
+
+.inputtext {
+  height: 35px;
+  padding: 3px 0px 6px 9px;
+  line-height: 16px;
+  font-size: 12px;
+  line-height: 1.47;
+  color: #999999;
+  width: 213px;
+  border-radius: 1.9px;
+  background-color: #fbfbfb;
+  border: solid 1px #e5e5e5;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  line-height: normal;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.nbaPincode {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.36;
+  color: #5a5a59;
+  cursor: pointer;
+  display: none !important;
+  visibility: hidden !important;
+  display: none;
+  padding-top: 20px;
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.errorPincodehidden {
+  color: red;
+  font-size: 12px;
+  padding: 5px;
+  display: none !important;
+  visibility: hidden !important;
+  display: none;
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.nextBestActionControls {
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  padding-top: 20px;
+  float: left;
+}
+
+.pincodeNbaSubmit {
+  font-size: 12px;
+  border-color: #333;
+  background: #333;
+  border-radius: 3px;
+  display: inline-block;
+  height: 35px;
+  line-height: 36px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-out 0s;
+  font-weight: 500;
+  overflow: hidden;
+  position: relative;
+  background-color: #e40046;
+  width: 66.66667%;
+}
+
+.pincodeSkipSubmit {
+  font-size: 12px;
+  color: #999;
+  background: #f4f4f4;
+  color: #333;
+  border-radius: 3px;
+  display: inline-block;
+  height: 35px;
+  line-height: 36px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-out 0s;
+  font-weight: 500;
+  overflow: hidden;
+  position: relative;
+  background-color: #e40046;
+  width: 29.16667%;
+}
+
+.sidebar2img {
+  display: flex;
+  object-fit: contain;
+  /* width: 100%;
+      height: 200px; */
+  /* margin-right: 10px; */
+
+  background-position: -5px -4px;
+  width: 133px;
+  height: 88px;
+  margin: 30px auto 30px;
+}
