@@ -2,6 +2,19 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import Moverlay__ from "./Login.module.css";
+import MLeft_container from "./Login.module.css";
+import MLeft__ from "./Login.module.css";
+import MLeft__img1 from "./Login.module.css";
+import MLeft_containerp from "./Login.module.css";
+import MRight__ from "./Login.module.css";
+import MLogin__title from "./Login.module.css";
+import MLogin__desc from "./Login.module.css";
+import Mtermsandcond__ from "./Login.module.css";
+import MLogin__btn from "./Login.module.css";
+import MLogin__googlebtn from "./Login.module.css";
+import MLogin__googlelogo from "./Login.module.css";
+import MLogin__span from "./Login.module.css";
 
 const Login = () => {
   const [username, usernameupdate] = useState("");
@@ -97,49 +110,81 @@ const Login = () => {
     return result;
   };
   return (
-    <div className="row">
-      <div className="offset-lg-3 col-lg-6" style={{ marginTop: "100px" }}>
-        <form onSubmit={ProceedLogin} className="container">
-          <div className="card">
-            <div className="card-header">
-              <h2>User Login</h2>
-            </div>
-            <div className="card-body">
-              <div className="form-group">
-                <label>
-                  User Name <span className="errmsg">*</span>
-                </label>
-                <input
-                  value={username}
-                  onChange={(e) => usernameupdate(e.target.value)}
-                  className="form-control"
-                ></input>
-              </div>
-              <div className="form-group">
-                <label>
-                  Password <span className="errmsg">*</span>
-                </label>
-                <input
-                  type="password"
-                  value={password}
-                  onChange={(e) => passwordupdate(e.target.value)}
-                  className="form-control"
-                ></input>
-              </div>
-            </div>
+    <>
+      <div className={Moverlay__.Moverlay__}>
+        <div className={MLeft__.Mleft}>
+          <div className={MLeft_container.Mleft_container}>
+            <img
+              className={MLeft__img1.Mleft__img1}
+              src="https://img.favpng.com/3/23/13/map-icon-png-vector-format-png-favpng-SwT3fkihcFphPUsrfz8zy4RnC.jpg"
+              alt=""
+            />
+            <p className={MLeft_containerp.Mleft_containerp}>
+              MANAGE YOUR ORDERS
+              <p>Track orders, manage cancellations & returns.</p>
+            </p>
+
+            <img
+              className={MLeft__img1.Mleft__img1}
+              src="https://cdn-icons-png.flaticon.com/512/252/252273.png"
+              alt=""
+            />
+            <p className={MLeft_containerp.Mleft_containerp}>
+              SHORTLIST ITEMS YOU LOVE
+              <p>Keep items you love on a watchlist.</p>{" "}
+            </p>
+            <img
+              className={MLeft__img1.Mleft__img1}
+              src="https://static.vecteezy.com/system/resources/previews/010/366/210/original/bell-icon-transparent-notification-free-png.png"
+              alt=""
+            />
+
+            <p className={MLeft_containerp.Mleft_containerp}>
+              AWESOME OFFERS UPDATES FOR YOU
+              <p> Be first to know about great offers and save.</p>
+            </p>
+          </div>
+        </div>
+        <form onSubmit={ProceedLogin}>
+          <div className={MRight__.Mright}>
+            <p className={MLogin__title.Mlogin__title}>
+              Login/Sign Up On Snapdeal
+            </p>
+            <p className={MLogin__desc.MLogin_des}>
+              Please provide your Mobile Number or Email to Login/ Sign Up on
+              Snapdeal
+            </p>
+            <label>
+              User Name <span className="errmsg">*</span>
+            </label>
+            <input
+              value={username}
+              onChange={(e) => usernameupdate(e.target.value)}
+              className="form-control"
+            ></input>
+            <label>
+              Password <span className="errmsg">*</span>
+            </label>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => passwordupdate(e.target.value)}
+              className="form-control"
+            ></input>
             <div className="card-footer">
-              <button type="submit" className="btn btn-primary">
+              <button type="submit" className={MLogin__btn.Mlogin__btnn}>
                 Login
               </button>{" "}
-              |
               <Link className="btn btn-success" to={"/register"}>
-                New User
+                Sign Up
               </Link>
             </div>
+
+            <p className={Mtermsandcond__.Mtermsandcon}></p>
           </div>
         </form>
       </div>
-    </div>
+    </>
   );
 };
 
