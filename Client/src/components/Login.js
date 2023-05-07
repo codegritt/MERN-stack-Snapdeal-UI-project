@@ -15,6 +15,9 @@ import MLogin__btn from "./Login.module.css";
 import MLogin__googlebtn from "./Login.module.css";
 import MLogin__googlelogo from "./Login.module.css";
 import MLogin__span from "./Login.module.css";
+import MLogin_label from "./Login.module.css";
+import MLogin_input from "./Login.module.css";
+import "./Login.css";
 
 const Login = () => {
   const [username, usernameupdate] = useState("");
@@ -154,7 +157,7 @@ const Login = () => {
               Please provide your Mobile Number or Email to Login/ Sign Up on
               Snapdeal
             </p>
-            <label>
+            <label className={MLogin_label.Mlogin_label}>
               User Name <span className="errmsg">*</span>
             </label>
             <input
@@ -162,7 +165,7 @@ const Login = () => {
               onChange={(e) => usernameupdate(e.target.value)}
               className="form-control"
             ></input>
-            <label>
+            <label className={MLogin_label.Mlogin_label}>
               Password <span className="errmsg">*</span>
             </label>
             <input
@@ -175,9 +178,13 @@ const Login = () => {
               <button type="submit" className={MLogin__btn.Mlogin__btnn}>
                 Login
               </button>{" "}
-              <Link className="btn btn-success" to={"/register"}>
+              {/* <Link
+                className="btn btn-success"
+                to={"/register"}
+                style={{ position: "relative", top: "12px", left: "10px" }}
+              >
                 Sign Up
-              </Link>
+              </Link> */}
             </div>
 
             <p className={Mtermsandcond__.Mtermsandcon}></p>
